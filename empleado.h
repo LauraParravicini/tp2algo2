@@ -13,6 +13,7 @@ class Empleado: public Trabajador{
 		int llegadas_tarde;
 
 	public:
+        //Descripcion: Constructor por defecto
 		Empleado();
 		Empleado(string apellido_nombre, unsigned int legajo, float sueldo_bruto, float sueldo_neto, char tipo_trabajador, int ausencias, int llegadas_tarde);
 		int obtener_ausencias();
