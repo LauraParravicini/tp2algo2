@@ -14,13 +14,36 @@ class Empleado: public Trabajador{
 
 	public:
         //Descripcion: Constructor por defecto
+	//PRE: Ninguna
+	//POS: Objeto empleado construido
 		Empleado();
+	//Descripcion: Constructor con parametros
+	//PRE: Ninguna
+	//POST: Objeto empleado construido cargado con los parametros ingresados
 		Empleado(string apellido_nombre, unsigned int legajo, float sueldo_bruto, float sueldo_neto, char tipo_trabajador, int ausencias, int llegadas_tarde);
+		// Descripcion:
+		//PRE:
+		//POST:
 		int obtener_ausencias();
+	// Descripcion:
+		//PRE:
+		//POST:
 		int obtener_llegadas_tarde();
+	// Descripcion:
+		//PRE:
+		//POST:
 		bool obtener_presentismo();
+	// Descripcion:
+		//PRE:
+		//POST:
 		void asignar_presentismo(bool presentismo);
+	// Descripcion:
+		//PRE:
+		//POST:
 		void verificar_presentismo();
+	// Descripcion:
+		//PRE:
+		//POST:
 		void liquidar_sueldo();
 };
 
