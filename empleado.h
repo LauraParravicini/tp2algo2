@@ -17,29 +17,35 @@ class Empleado: public Trabajador{
 	//PRE: Ninguna
 	//POS: Objeto empleado construido
 		Empleado();
+	
 	//Descripcion: Constructor con parametros
 	//PRE: Ninguna
 	//POST: Objeto empleado construido cargado con los parametros ingresados
 		Empleado(string apellido_nombre, unsigned int legajo, float sueldo_bruto, float sueldo_neto, char tipo_trabajador, int ausencias, int llegadas_tarde);
-		// Descripcion:
-		//PRE:
-		//POST:
+	
+	// Descripcion: Getter del atributo ausencias
+	//PRE: Ninguna
+	//POST: Devuelve el atributo ausencias
 		int obtener_ausencias();
-	// Descripcion:
-		//PRE:
-		//POST:
+	
+	// Descripcion: Getter del atributo llegadas_tarde.
+	//PRE: Ninguna.
+	//POST: Devuelve el atributo llegadas_tarde.
 		int obtener_llegadas_tarde();
-	// Descripcion:
-		//PRE:
-		//POST:
+	
+	// Descripcion: Getter del atributo presentismo.
+	//PRE: Ninguna.
+	//POST: Devuelve el atributo presentismo.
 		bool obtener_presentismo();
-	// Descripcion:
-		//PRE:
-		//POST:
+	
+	// Descripcion: Setter del atributo presentismo
+	//PRE: Parametro valido (verdadero o falso)
+	//POST: Asigna el atributo presentismo
 		void asignar_presentismo(bool presentismo);
-	// Descripcion:
-		//PRE:
-		//POST:
+	
+	// Descripcion: Setter del atributo presentisCmo
+	//PRE: Parametro valido (verdadero o falso)
+	//POST: Asigna el atributo presentismo
 		void verificar_presentismo();
 	// Descripcion:
 		//PRE:
